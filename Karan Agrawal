@@ -1,5 +1,3 @@
-import scala.io.StdIn.readLine
-
 object assig1 extends App{
 
   val input: String = scala.io.StdIn.readLine();
