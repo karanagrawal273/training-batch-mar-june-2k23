@@ -1,0 +1,21 @@
+import scala.annotation.tailrec
+object Factorial extends App{
+  println("Enter the number")
+  val n = scala.io.StdIn.readInt()
+def factorial(input: Int):Int={
+
+   @tailrec def fact(ac:Int, m:Int):Int={
+    if(m==0){
+      ac
+    }
+    else{
+      fact(ac*m,m-1)
+    }
+
+  }
+  fact(1,input)
+}
+  println(factorial(n))
+}
+
+
